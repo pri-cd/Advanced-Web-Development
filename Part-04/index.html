@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables & Images!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <img src="/Part-04/Assets/Satoru-Gojo.jpg" alt="Satoru-Gojo">
     <table>
-        <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Occupation</th>
-        </tr>
+        <caption>Caption (Table)</caption><br>
 
-        <tr>
-            <td>Prithvee Raj Singh</td>
-            <td rowspan="2">Male</td>
+        <!-- Header part of The body! -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+
+        <!-- Body Part of The Table!-  -->
+        <tbody>
+
+            <tr>
+                <td>Prithvee Raj Singh</td>
+                <td rowspan="2`">Male</td>
+                <td>Developer</td>
+            </tr>
+
+            <tr>
+                <td>Drake</td>
+                <td>Singer</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Anonnymous</td>
+                <td>Hacker</td>
+            </tr>
+        </tbody>
+
+        <!-- THead, TBody & TFoot is Just used to Group The Target Data. To Later intergrate it with CSS...  -->
+        <tfoot>
+            <td>Foot Boy!</td>
+            <td>Male</td>
             <td>Developer</td>
-        </tr>
-
-        <tr>
-            <td>Drake</td>
-            <td>Singer</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">Anonnymous</td>
-            <td>Hacker</td>
-        </tr>
+        </tfoot>
     </table>
+
+    <!-- <ul type="disc, cirlce, square"> Depricated. (But Still Works!)-->
+    <ul style="list-style: circle;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Peach</li>
+    </ul>
+
+
+    <ol type="1">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Peach</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML is HyperText Markup Language! </dd>
+        
+        <dt>CSS</dt>
+        <dd>CSS is Cascading Style Sheets</dd>
+    </dl>
 </body>
+
 </html>
